@@ -15,12 +15,12 @@ const state = {
     },
 };
 
-function playSound () {
-    let audio = new Audio(".src/audios/music.mp4")
+function playSound() {
+    let audio = new Audio("./src/audios/music.mp4"); // Corrected path
     audio.volume = 0.5;
     audio.play();
 }
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     playSound();
 });
 
